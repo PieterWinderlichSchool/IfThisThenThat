@@ -70,13 +70,15 @@ uint16_t GuitarString::ReadMillimeters() {
   return 9999;
 }
 
-bool void GuitarString::IsStringHit()
-{
-  int value = digitalRead(RecieverPin);
-  Serial.println(value);
-  if(value == HIGH) return true;
-  return false;
+bool GuitarString::IsStringHit(){
+  // int value = digitalRead(RecieverPin);
+ // Serial.println(value);
+//  if(value == HIGH) return true;
+//  return false;
+//depricated
 }
+
+ 
 void GuitarString::SetScale() {
   
 }
